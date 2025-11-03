@@ -19,8 +19,7 @@ I build datasets such as **MAD** and **MAD2**, and design **audio–text fusion 
 
 Broadly, my work examines how **temporal context** (claim-only, causal, or full-dialogue) affects model accuracy, fairness, and interpretability in verifying spoken claims.
 
-Before my Ph.D., I completed dual bachelor’s degrees in **Computer Science** (Magna Cum Laude) and **Mathematics** (Cum Laude) at Penn State, where I was a [Schreyer Honors College](https://www.shc.psu.edu/) scholar and conducted my undergraduate honors thesis,  
-[_Robust Image Classification based on Pixel Importance_](https://honors.libraries.psu.edu/catalog/7983czc5884), advised by [Dr. Jia Li](https://science.psu.edu/stat/people/jol2).
+Before my Ph.D., I completed dual bachelor’s degrees in **Computer Science** (Magna Cum Laude) and **Mathematics** (Cum Laude) at Penn State, where I was a [Schreyer Honors College](https://www.shc.psu.edu/) scholar.
 
 I am broadly interested in **speech and language understanding**, **multimodal learning**, **AI for social good**, and **dataset creation for responsible AI research**.
 
@@ -37,22 +36,35 @@ I am broadly interested in **speech and language understanding**, **multimodal l
   {% capture authors_html %}
     {{ p.authors | replace: "Chaewan Chun", "<strong>Chaewan Chun</strong>" }}
   {% endcapture %}
+
   <article class="pub2">
     <div class="pub2-left">
       <abbr class="abbr-badge">{{ p.abbr | default: "VENUE" }}</abbr>
     </div>
+
     <div class="pub2-right">
       <h3 class="pub-title">
-        {% if p.external_url %}
-          <a href="{{ p.external_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
+        {% if p.pdf %}
+          <a href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
         {% else %}
           {{ p.title }}
         {% endif %}
       </h3>
+
       <div class="pub-authors">{{ authors_html }}</div>
-      <div class="pub-venue">{{ p.venue }}</div>
+
+      {% if p.year %}
+        {% assign y = p.year %}
+      {% elsif p.date %}
+        {% assign y = p.date | date: "%Y" %}
+      {% endif %}
+
+      <div class="pub-venue">
+        {{ p.venue }}{% if y %}, {{ y }}{% endif %}
+      </div>
+
       <div class="pub-links">
-        {% if p.pdf %}<a class="btn" href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {# PDF button removed on purpose #}
         {% if p.code %}<a class="btn" href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
       </div>
     </div>
