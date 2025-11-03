@@ -39,14 +39,13 @@ I am broadly interested in **speech and language understanding**, **multimodal l
     {% endcapture %}
     <article class="pub">
       <div class="venue-badge">{{ p.abbr | default: "PAPER" }}</div>
-      <div class="pub-body">
-        <h3 class="pub-title">
-          {% if p.external_url %}
-            <a href="{{ p.external_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
-          {% else %}
-            {{ p.title }}
-          {% endif %}
-        </h3>
+      <h3 class="pub-title">
+        {% if p.external_url %}
+          <a href="{{ p.external_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
+        {% else %}
+          {{ p.title }}
+        {% endif %}
+      </h3>
         <div class="pub-authors">{{ authors_html }}</div>
         <div class="pub-venue">{{ p.venue }}</div>
         <div class="pub-links">
@@ -65,10 +64,15 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 
 /* Single-style badge (same color for all, like Jooyoung’s) */
 .venue-badge{
-  flex:0 0 64px; width:64px; height:28px;
-  display:flex; align-items:center; justify-content:center;
-  border-radius:6px; font-size:12px; font-weight:700; letter-spacing:.3px;
-  background:#e8f0ff; border:1px solid #b7c7ff; color:#2a50d8;
+  display:inline-flex; align-items:center; justify-content:center;
+  height:24px; padding:0 10px; min-width:48px;
+  border-radius:999px;                  /* pill shape like al-folio */
+  font-size:12px; font-weight:700; letter-spacing:.3px;
+  background:#e8f0ff;                   /* unified background */
+  border:1px solid #b7c7ff;             /* unified border */
+  color:#2a50d8;                        /* unified text color */
+  margin-right:10px;                     /* space before title */
+  user-select:none; white-space:nowrap;
 }
 
 /* content */
