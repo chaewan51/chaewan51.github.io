@@ -61,32 +61,65 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 </div>
 
 <style>
-.pubs2{display:flex;flex-direction:column;gap:16px;margin-top:8px}
-.pub2{display:grid;grid-template-columns:84px 1fr;gap:12px;align-items:start;border-top:1px solid rgba(0,0,0,.08);padding-top:12px}
-.pub2:first-child{border-top:none}
-.pub2-left{display:flex}
+/* ===== Compact Option B (same scale as Option A) ===== */
+:root{
+  --badge-col: 84px;      /* width of the left badge column (tweak if your abbr is long) */
+  --badge-fs: 12px;       /* badge font size (Option A used ~12px) */
+  --badge-pad-y: 4px;     /* vertical padding */
+  --badge-pad-x: 8px;     /* horizontal padding */
+  --badge-radius: 6px;    /* rounded corners (≈ .375rem) */
+}
 
-/* al-folio badge clone */
+.pubs2{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.pub2{
+  display:grid;
+  grid-template-columns: var(--badge-col) 1fr;
+  gap:10px;
+  align-items:start;
+  border-top:1px solid rgba(0,0,0,.08);
+  padding-top:10px;
+}
+.pub2:first-child{border-top:none}
+
+.pub2-left{display:flex;justify-content:center;align-items:flex-start;margin-top:2px}
+
+/* Badge scaled like Option A */
 .abbr-badge{
-  display:inline-block;width:100%;text-align:center;
-  padding:6px 8px;line-height:1;font-weight:700;letter-spacing:.3px;
-  background:#3f51b5;color:#fff;border-radius:.375rem;
+  display:inline-block;
+  width:100%;               /* fills the left column for clean vertical alignment */
+  text-align:center;
+  font-size:var(--badge-fs);
+  line-height:1.05;
+  font-weight:700;
+  letter-spacing:.2px;
+  padding:var(--badge-pad-y) var(--badge-pad-x);
+  border-radius:var(--badge-radius);
+  background:#3f51b5;       /* single color for all (your preference) */
+  color:#fff;
+  white-space:nowrap;        /* prevent awkward wrapping; increase --badge-col if needed */
+  user-select:none;
 }
 .abbr-badge a{color:#fff;text-decoration:none}
-.abbr-badge a:hover{text-decoration:none}
 
-/* content */
-.pub-title{margin:0;line-height:1.35}
+/* Content scale (keep titles from dwarfing the badge) */
+.pub-title{margin:0;line-height:1.35;font-size:1rem}
 .pub-title a{text-decoration:none;color:#2a66ff}
 .pub-title a:hover{text-decoration:underline}
-.pub-authors{opacity:.9;margin-top:2px}
-.pub-venue{opacity:.75;margin-top:2px}
-.btn{display:inline-block;margin-top:6px;margin-right:8px;padding:4px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.15);font-size:.85rem;text-decoration:none}
+.pub-authors{opacity:.9;margin-top:2px;font-size:.95rem}
+.pub-venue{opacity:.75;margin-top:2px;font-size:.95rem}
 
+.pub-links .btn{
+  display:inline-block;margin-top:6px;margin-right:8px;
+  padding:4px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.15);
+  font-size:.85rem;text-decoration:none
+}
+
+/* Mobile tweaks */
 @media (max-width:640px){
-  .pub2{grid-template-columns:72px 1fr}
+  :root{ --badge-col: 72px; --badge-fs: 11px; --badge-pad-y: 3px; --badge-pad-x: 6px; }
 }
 </style>
+
 
 
 
