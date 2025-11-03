@@ -15,7 +15,7 @@ I’m a **Ph.D. candidate** in Informatics at [The Pennsylvania State University
 
 Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cum Laude) and **Mathematics** (Cum Laude) at Penn State as a [Schreyer Honors College](https://www.shc.psu.edu/) scholar.
 
-**Interests:** Machine Learning; Generative AI; Large Language Models; Computer Vision; Speech \& Audio Processing; Multimodal Learning; Information Retrieval
+**Interests:** Machine Learning; Generative AI; Large Language Models; Computer Vision; Speech & Audio Processing; Multimodal Learning; Information Retrieval
 
 
 
