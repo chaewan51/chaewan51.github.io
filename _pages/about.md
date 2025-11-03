@@ -29,7 +29,7 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 ## Publications
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
-/* Show only selected on home; comment this line out if you want all */
+{% comment %} Show only selected on home; remove this line to show all {% endcomment %}
 {% assign pubs = pubs | where: "selected", true %}
 
 <div class="pub-list">
@@ -63,7 +63,7 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 
 /* Text */
 .pub-title{font-weight:700;line-height:1.35}
-.pub-title a{text-decoration:none; color: #2a66ff;} /* <- title color */
+.pub-title a{text-decoration:none;color:#2a66ff}    /* title color */
 .pub-title a:hover{text-decoration:underline}
 .pub-authors{opacity:.9;margin-top:2px}
 .pub-venue{opacity:.75;margin-top:2px}
@@ -75,6 +75,7 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 .btn-pdf{background:#f7f9ff}
 .btn-code{background:#f7fff7}
 </style>
+
 
 
 ## Updates
