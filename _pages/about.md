@@ -119,12 +119,3 @@ I am broadly interested in **speech and language understanding**, **multimodal l
   :root{ --badge-col: 72px; --badge-fs: 11px; --badge-pad-y: 3px; --badge-pad-x: 6px; }
 }
 </style>
-
-
-
-
-## Updates
-{% assign news = site.posts | sort: "date" | reverse %}
-{% for item in news limit:5 %}
-- **{{ item.date | date: "%Y-%m-%d" }}** — [{{ item.title }}]({{ item.url | relative_url }})
-{% endfor %}
