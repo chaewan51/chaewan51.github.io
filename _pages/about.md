@@ -23,10 +23,6 @@ Keywords:
   {% include archive-single.html %}
 {% endfor %}
 
-{% for post in site.publications reversed %}
-  {% if post.selected %}{% include archive-single.html %}{% endif %}
-{% endfor %}
-
 ## Updates
 {% assign news = site.posts | sort: "date" | reverse %}
 {% for item in news limit:5 %}
