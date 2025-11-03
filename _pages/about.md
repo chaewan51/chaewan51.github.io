@@ -32,13 +32,16 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 {% comment %} On home, show a curated subset {% endcomment %}
 {% assign pubs = pubs | where: "selected", true %}
 
-<div class="pubs">
+<div class="pubs2">
   {% for p in pubs %}
-    {% capture authors_html %}
-      {{ p.authors | replace: "Chaewan Chun", "<strong>Chaewan Chun</strong>" }}
-    {% endcapture %}
-    <article class="pub">
-      <div class="venue-badge">{{ p.abbr | default: "PAPER" }}</div>
+  {% capture authors_html %}
+    {{ p.authors | replace: "Chaewan Chun", "<strong>Chaewan Chun</strong>" }}
+  {% endcapture %}
+  <article class="pub2">
+    <div class="pub2-left">
+      <abbr class="abbr-badge">{{ p.abbr | default: "VENUE" }}</abbr>
+    </div>
+    <div class="pub2-right">
       <h3 class="pub-title">
         {% if p.external_url %}
           <a href="{{ p.external_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
@@ -46,45 +49,43 @@ I am broadly interested in **speech and language understanding**, **multimodal l
           {{ p.title }}
         {% endif %}
       </h3>
-        <div class="pub-authors">{{ authors_html }}</div>
-        <div class="pub-venue">{{ p.venue }}</div>
-        <div class="pub-links">
-          {% if p.pdf %}<a class="btn btn-pdf" href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
-          {% if p.code %}<a class="btn btn-code" href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
-        </div>
+      <div class="pub-authors">{{ authors_html }}</div>
+      <div class="pub-venue">{{ p.venue }}</div>
+      <div class="pub-links">
+        {% if p.pdf %}<a class="btn" href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if p.code %}<a class="btn" href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
       </div>
-    </article>
+    </div>
+  </article>
   {% endfor %}
 </div>
 
 <style>
-.pubs{display:flex;flex-direction:column;gap:16px;margin-top:8px}
-.pub{display:flex;gap:12px;align-items:flex-start;border-top:1px solid rgba(0,0,0,.08);padding-top:12px}
-.pub:first-child{border-top:none}
+.pubs2{display:flex;flex-direction:column;gap:16px;margin-top:8px}
+.pub2{display:grid;grid-template-columns:84px 1fr;gap:12px;align-items:start;border-top:1px solid rgba(0,0,0,.08);padding-top:12px}
+.pub2:first-child{border-top:none}
+.pub2-left{display:flex}
 
-/* al-folio-like venue badge (single color for all) */
-.venue-badge{
-  display:inline-block;
-  padding:6px 10px;
-  border-radius:.375rem;          /* like Bootstrap .rounded */
-  font-size:12px;font-weight:700;letter-spacing:.3px;
-  background:#3f51b5;             /* pick one color (same across venues) */
-  color:#fff;                      /* al-folio uses white text on solid bg */
-  line-height:1; text-align:center; user-select:none; white-space:nowrap;
+/* al-folio badge clone */
+.abbr-badge{
+  display:inline-block;width:100%;text-align:center;
+  padding:6px 8px;line-height:1;font-weight:700;letter-spacing:.3px;
+  background:#3f51b5;color:#fff;border-radius:.375rem;
 }
-.venue-badge a{color:#fff;text-decoration:none}
-.venue-badge a:hover{text-decoration:none}
+.abbr-badge a{color:#fff;text-decoration:none}
+.abbr-badge a:hover{text-decoration:none}
 
 /* content */
-.pub-body{flex:1;min-width:0}
 .pub-title{margin:0;line-height:1.35}
 .pub-title a{text-decoration:none;color:#2a66ff}
 .pub-title a:hover{text-decoration:underline}
 .pub-authors{opacity:.9;margin-top:2px}
 .pub-venue{opacity:.75;margin-top:2px}
 .btn{display:inline-block;margin-top:6px;margin-right:8px;padding:4px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.15);font-size:.85rem;text-decoration:none}
-.btn-pdf{background:#f7f9ff}
-.btn-code{background:#f7fff7}
+
+@media (max-width:640px){
+  .pub2{grid-template-columns:72px 1fr}
+}
 </style>
 
 
