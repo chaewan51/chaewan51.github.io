@@ -53,7 +53,10 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 
       {% assign y = p.year %}
       {% if y == nil and p.date %}{% assign y = p.date | date: "%Y" %}{% endif %}
-      <div class="pub-venue">{{ p.venue }}{% if y %}, {{ y }}{% endif %}</div>
+      <div class="pub-venue">
+        {{ p.venue }}{% if p.status %}, {{ p.status }}{% endif %}{% if y %}, {{ y }}{% endif %}
+      </div>
+
 
       <div class="pub-links">
         {% if p.code %}<a class="btn" href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
