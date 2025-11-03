@@ -27,9 +27,7 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 
 ## Publications
 
-{% assign pubs = site.publications | sort: "date" | reverse %}
-{% comment %} On home, show a curated subset {% endcomment %}
-{% assign pubs = pubs | where: "selected", true %}
+{% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
 
 <div class="pubs2">
   {% for p in pubs %}
@@ -53,24 +51,18 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 
       <div class="pub-authors">{{ authors_html }}</div>
 
-      {% if p.year %}
-        {% assign y = p.year %}
-      {% elsif p.date %}
-        {% assign y = p.date | date: "%Y" %}
-      {% endif %}
-
-      <div class="pub-venue">
-        {{ p.venue }}{% if y %}, {{ y }}{% endif %}
-      </div>
+      {% assign y = p.year %}
+      {% if y == nil and p.date %}{% assign y = p.date | date: "%Y" %}{% endif %}
+      <div class="pub-venue">{{ p.venue }}{% if y %}, {{ y }}{% endif %}</div>
 
       <div class="pub-links">
-        {# PDF button removed on purpose #}
         {% if p.code %}<a class="btn" href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
       </div>
     </div>
   </article>
   {% endfor %}
 </div>
+
 
 <style>
 /* ===== Compact Option B (same scale as Option A) ===== */
