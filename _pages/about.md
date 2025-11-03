@@ -62,33 +62,30 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 .pub{display:flex;gap:12px;align-items:flex-start;border-top:1px solid rgba(0,0,0,.08);padding-top:12px}
 .pub:first-child{border-top:none}
 
-/* Single-style badge (same color for all, like Jooyoung’s) */
+/* al-folio-like venue badge (single color for all) */
 .venue-badge{
-  display:inline-flex; align-items:center; justify-content:center;
-  height:24px; padding:0 10px; min-width:48px;
-  border-radius:999px;                  /* pill shape like al-folio */
-  font-size:12px; font-weight:700; letter-spacing:.3px;
-  background:#e8f0ff;                   /* unified background */
-  border:1px solid #b7c7ff;             /* unified border */
-  color:#2a50d8;                        /* unified text color */
-  margin-right:10px;                     /* space before title */
-  user-select:none; white-space:nowrap;
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:.375rem;          /* like Bootstrap .rounded */
+  font-size:12px;font-weight:700;letter-spacing:.3px;
+  background:#3f51b5;             /* pick one color (same across venues) */
+  color:#fff;                      /* al-folio uses white text on solid bg */
+  line-height:1; text-align:center; user-select:none; white-space:nowrap;
 }
+.venue-badge a{color:#fff;text-decoration:none}
+.venue-badge a:hover{text-decoration:none}
 
 /* content */
-.pub-body{flex:1; min-width:0}
-.pub-title{margin:0; line-height:1.35}
+.pub-body{flex:1;min-width:0}
+.pub-title{margin:0;line-height:1.35}
 .pub-title a{text-decoration:none;color:#2a66ff}
 .pub-title a:hover{text-decoration:underline}
 .pub-authors{opacity:.9;margin-top:2px}
 .pub-venue{opacity:.75;margin-top:2px}
-.btn{display:inline-block;margin-top:6px;margin-right:8px;padding:4px 10px;
-  border-radius:999px;border:1px solid rgba(0,0,0,.15);font-size:.85rem;text-decoration:none}
+.btn{display:inline-block;margin-top:6px;margin-right:8px;padding:4px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.15);font-size:.85rem;text-decoration:none}
 .btn-pdf{background:#f7f9ff}
 .btn-code{background:#f7fff7}
 </style>
-
-
 
 
 
