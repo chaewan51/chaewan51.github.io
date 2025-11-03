@@ -8,4 +8,3 @@ selected: true
 pdf: "/files/papers/mad1.pdf"
 status: "Working paper"
 ---
-Accepted as a working paper.
