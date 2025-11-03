@@ -1,11 +1,19 @@
+#---
+#permalink: /about/
+#title: "About"
+#author_profile: true
+#redirect_from: 
+#  - /about/
+#  - /about.html
+#---
+
 ---
-permalink: /about/
+layout: page
 title: "About"
+permalink: /about/
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
+
 
 Hello! My name is Chaewan Chun (Just call me Chae!).
 
