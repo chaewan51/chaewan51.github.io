@@ -1,8 +1,10 @@
 ---
-layout: page        # or 'home' if you want the home widgets style
-title: "Chaewan Chun"
-permalink: /        # <-- this makes About render at the site root
+permalink: /
+title: "... "
 author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
 ---
 
 ## About
