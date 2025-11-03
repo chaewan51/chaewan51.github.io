@@ -1,11 +1,4 @@
-#---
-#permalink: /about/
-#title: "About"
-#author_profile: true
-#redirect_from: 
-#  - /about/
-#  - /about.html
-#---
+
 
 ---
 layout: page        # or 'home' if you want the home widgets style
