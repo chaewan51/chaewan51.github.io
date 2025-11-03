@@ -26,12 +26,56 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 
 
 
-## Selected Publications
+## Publications
 
-{% include base_path %}
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
+/* Show only selected on home; comment this line out if you want all */
+{% assign pubs = pubs | where: "selected", true %}
+
+<div class="pub-list">
+  {% for p in pubs %}
+    {% capture authors_html %}
+      {{ p.authors | replace: "Chaewan Chun", "<strong>Chaewan Chun</strong>" }}
+    {% endcapture %}
+    <div class="pub-item">
+      <div class="pub-title">
+        {% if p.external_url %}
+          <a href="{{ p.external_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
+        {% else %}
+          {{ p.title }}
+        {% endif %}
+      </div>
+      <div class="pub-authors">{{ authors_html }}</div>
+      <div class="pub-venue">{{ p.venue }}</div>
+      <div class="pub-links">
+        {% if p.pdf %}<a class="btn btn-pdf" href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+        {% if p.code %}<a class="btn btn-code" href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+/* Layout */
+.pub-list{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+.pub-item{padding:10px 0;border-top:1px solid rgba(0,0,0,.08)}
+.pub-item:first-child{border-top:none}
+
+/* Text */
+.pub-title{font-weight:700;line-height:1.35}
+.pub-title a{text-decoration:none; color: #2a66ff;} /* <- title color */
+.pub-title a:hover{text-decoration:underline}
+.pub-authors{opacity:.9;margin-top:2px}
+.pub-venue{opacity:.75;margin-top:2px}
+
+/* Buttons */
+.btn{display:inline-block;margin-top:6px;margin-right:8px;
+  padding:4px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.15);
+  font-size:.85rem;text-decoration:none}
+.btn-pdf{background:#f7f9ff}
+.btn-code{background:#f7fff7}
+</style>
+
 
 ## Updates
 {% assign news = site.posts | sort: "date" | reverse %}
