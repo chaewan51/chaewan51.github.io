@@ -9,20 +9,13 @@ redirect_from:
 
 ## About me
 
-Hello! My name is Chaewan Chun (Just call me Chae!).
+Hello! I’m **Chaewan Chun** (*Chae*).
 
-My research interest is anything that has positive impact on society.
+I’m a **Ph.D. candidate** in Informatics at [The Pennsylvania State University](https://www.psu.edu/), advised by [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). My research focuses on **multimodal misinformation detection**, especially **fact-checking in spoken, conversational audio**. I build datasets and methods that aim for **positive social impact** by improving information integrity.
 
-I am a **Ph.D. candidate in Informatics** at [The Pennsylvania State University](https://www.psu.edu/), advised by [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/).  
-My research focuses on **multimodal misinformation detection**—particularly **fact-checking in spoken, conversational audio**.  
-I build datasets such as **MAD** and **MAD2**, and design **audio–text fusion pipelines** that jointly model conversational speech and language for claim verification.
+Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cum Laude) and **Mathematics** (Cum Laude) at Penn State as a [Schreyer Honors College](https://www.shc.psu.edu/) scholar.
 
-Broadly, my work examines how **temporal context** (claim-only, causal, or full-dialogue) affects model accuracy, fairness, and interpretability in verifying spoken claims.
-
-Before my Ph.D., I completed dual bachelor’s degrees in **Computer Science** (Magna Cum Laude) and **Mathematics** (Cum Laude) at Penn State, where I was a [Schreyer Honors College](https://www.shc.psu.edu/) scholar.
-
-I am broadly interested in **speech and language understanding**, **multimodal learning**, **AI for social good**, and **dataset creation for responsible AI research**.
-
+**Interests:** speech & language understanding; multimodal learning; AI for social good; dataset creation & evaluation.
 
 
 ## Publications
