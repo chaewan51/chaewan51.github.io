@@ -23,7 +23,7 @@ repository               : "chaewan51/chaewan51.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "coatProfile.jpg"
   name             : "Chaewan Chun"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. candidate @ Penn State"
