@@ -29,7 +29,7 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 ## Publications
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
-{% comment %} On home, show only selected; remove next line to show all {% endcomment %}
+{% comment %} On home, show a curated subset {% endcomment %}
 {% assign pubs = pubs | where: "selected", true %}
 
 <div class="pubs">
@@ -38,9 +38,7 @@ I am broadly interested in **speech and language understanding**, **multimodal l
       {{ p.authors | replace: "Chaewan Chun", "<strong>Chaewan Chun</strong>" }}
     {% endcapture %}
     <article class="pub">
-      <div class="pub-badge">
-        {{ p.badge | default: "PAPER" }}
-      </div>
+      <div class="venue-badge">{{ p.abbr | default: "PAPER" }}</div>
       <div class="pub-body">
         <h3 class="pub-title">
           {% if p.external_url %}
@@ -61,35 +59,31 @@ I am broadly interested in **speech and language understanding**, **multimodal l
 </div>
 
 <style>
-/* container + item */
 .pubs{display:flex;flex-direction:column;gap:16px;margin-top:8px}
 .pub{display:flex;gap:12px;align-items:flex-start;border-top:1px solid rgba(0,0,0,.08);padding-top:12px}
 .pub:first-child{border-top:none}
 
-/* single-style badge (same color for all) */
-.pub-badge{
+/* Single-style badge (same color for all, like Jooyoung’s) */
+.venue-badge{
   flex:0 0 64px; width:64px; height:28px;
   display:flex; align-items:center; justify-content:center;
   border-radius:6px; font-size:12px; font-weight:700; letter-spacing:.3px;
-  background:#e8f0ff;        /* <-- unified background */
-  border:1px solid #b7c7ff;  /* <-- unified border */
-  color:#2a50d8;             /* <-- unified text color */
+  background:#e8f0ff; border:1px solid #b7c7ff; color:#2a50d8;
 }
 
 /* content */
 .pub-body{flex:1; min-width:0}
 .pub-title{margin:0; line-height:1.35}
-.pub-title a{text-decoration:none;color:#2a66ff}   /* colored title link */
+.pub-title a{text-decoration:none;color:#2a66ff}
 .pub-title a:hover{text-decoration:underline}
 .pub-authors{opacity:.9;margin-top:2px}
 .pub-venue{opacity:.75;margin-top:2px}
-
-/* buttons */
 .btn{display:inline-block;margin-top:6px;margin-right:8px;padding:4px 10px;
   border-radius:999px;border:1px solid rgba(0,0,0,.15);font-size:.85rem;text-decoration:none}
 .btn-pdf{background:#f7f9ff}
 .btn-code{background:#f7fff7}
 </style>
+
 
 
 
