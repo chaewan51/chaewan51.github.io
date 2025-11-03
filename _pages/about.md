@@ -1,5 +1,3 @@
-
-
 ---
 layout: page        # or 'home' if you want the home widgets style
 title: "Chaewan Chun"
