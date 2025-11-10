@@ -13,7 +13,7 @@ Hello! I’m **Chaewan Chun** (*Chae*).
 
 I’m a **Ph.D. candidate** in Informatics at [The Pennsylvania State University](https://ist.psu.edu/), advised by [Dr. Dongwon Lee](https://pike.psu.edu/dongwon/). My research focuses on **multimodal misinformation detection**, especially **fact-checking in spoken, conversational audio**. I build datasets and methods that aim for **positive social impact** by improving information integrity.
 
-Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cum Laude) and **Mathematics** (Cum Laude) at Penn State as a [Schreyer Honors College](https://www.shc.psu.edu/) scholar.
+Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cum Laude) and **Mathematics** (Cum Laude), along with a minor in **Statistics**, at Penn State as a [Schreyer Honors College](https://www.shc.psu.edu/) scholar.
 
 **Interests:** Machine Learning; Generative AI; Large Language Models; Computer Vision; Speech & Audio Processing; Multimodal Learning; Information Retrieval
 
