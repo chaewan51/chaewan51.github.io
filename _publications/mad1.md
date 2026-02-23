@@ -6,5 +6,5 @@ abbr: "SBP-BRiMS"     # this is the little badge text
 date: 2025-08-17
 selected: true
 pdf: "/files/papers/mad1.pdf"
-status: "Working paper"
+status: "Accepted as Working paper"
 ---
