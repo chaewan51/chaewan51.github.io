@@ -1,7 +1,7 @@
 ---
 title: "Mapping the flow of painterly gesture"
 authors: "Lizhen Zhu, Chaewan Chun, Kathryn Brown, James Z. Wang"
-venue: "Patterns"
+venue: "Patterns (short paper)"
 abbr: "Patterns"     # this is the little badge text
 date: 2026-02-23
 selected: true
