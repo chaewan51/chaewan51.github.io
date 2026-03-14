@@ -19,6 +19,36 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 
 
 
+## Updates
+
+🆕 **Mar 2026** · CAVE position paper committed to ACL 2026 via OpenReview  
+📄 **Mar 2026** · Paper got accepted to Patterns short paper
+📄 **Feb 2026** · Paper submitted to Interspeech 2026  
+📄 **Feb 2026** · TOP 10 Amazon NOVA challenge https://www.psu.edu/news/research/story/ist-engineering-students-competing-global-amazon-nova-ai-challenge
+📄 **Feb 2026** · Paper got accepted at TPAMI Journal!
+📄 **Dec 2025** · Passed my Comprehensive Exam 
+📄 **Nov 2025** · Attending Grace Hopper Celebration at Chicago!
+📄 **Oct 2025** · Poster presented at SBP-BRiMS 2025 at CMU!
+📄 **Aug 2025** · Paper got accepted at SBP-BRiMS!
+📄 **Apr 2025** · Poster presented at MASC-SLL Symposium
+
+
+## Updates
+
+📄 **Mar 2026** · "Mapping the Flow of Painterly Gesture" accepted at *Patterns*  
+🏆 **Feb 2026** · Penn State team selected as global Top-10 in [Amazon Nova AI Challenge](https://www.psu.edu/news/research/story/ist-engineering-students-competing-global-amazon-nova-ai-challenge)  
+📄 **Feb 2026** · Two papers submitted to Interspeech 2026 (under review)  
+📄 **Feb 2026** · "Brushstroke Analysis of Monet's Water Lilies" accepted at *IEEE TPAMI*  
+🎓 **Dec 2025** · Passed PhD Comprehensive Exam  
+📄 **Nov 2025** · Attended Grace Hopper Celebration 2025 in Chicago
+📄 **Oct 2025** · Paper submitted to ACL ARR 2026  
+🎤 **Oct 2025** · Presented MAD poster at SBP-BRiMS 2025 at CMU  
+📄 **Aug 2025** · MAD accepted at SBP-BRiMS 2025  
+🎤 **Apr 2025** · Presented poster at MASC-SLL Symposium
+
+
+
+
 ## Publications
 
 {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
