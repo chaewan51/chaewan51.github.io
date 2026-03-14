@@ -21,6 +21,8 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 
 ## Updates
 
+<div style="height: 320px; overflow-y: auto; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px;">
+
 📄 **Mar 2026** · "Mapping the Flow of Painterly Gesture" accepted at *Patterns*  
 🏆 **Feb 2026** · Penn State team selected as global Top-10 in [Amazon Nova AI Challenge](https://www.psu.edu/news/research/story/ist-engineering-students-competing-global-amazon-nova-ai-challenge)  
 📄 **Feb 2026** · Two papers submitted to Interspeech 2026 (under review)  
@@ -32,6 +34,7 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 📄 **Aug 2025** · MAD accepted at SBP-BRiMS 2025  
 🎤 **Apr 2025** · Presented poster at MASC-SLL Symposium
 
+</div>
 
 
 
