@@ -19,20 +19,21 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 
 
 
+
 ## Updates
 
-<div style="height: 320px; overflow-y: auto; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px;">
+<div style="height: 320px; overflow-y: auto; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px; line-height: 2;">
 
-📄 **Mar 2026** · "Mapping the Flow of Painterly Gesture" accepted at *Patterns*  
-🏆 **Feb 2026** · Penn State team selected as global Top-10 in [Amazon Nova AI Challenge](https://www.psu.edu/news/research/story/ist-engineering-students-competing-global-amazon-nova-ai-challenge)  
-📄 **Feb 2026** · Two papers submitted to Interspeech 2026 (under review)  
-📄 **Feb 2026** · "Brushstroke Analysis of Monet's Water Lilies" accepted at *IEEE TPAMI*  
-🎓 **Dec 2025** · Passed PhD Comprehensive Exam  
-📄 **Nov 2025** · Attended Grace Hopper Celebration 2025 in Chicago  
-📄 **Oct 2025** · Paper submitted to ACL ARR 2026  
-🎤 **Oct 2025** · Presented MAD poster at SBP-BRiMS 2025 at CMU  
-📄 **Aug 2025** · MAD accepted at SBP-BRiMS 2025  
-🎤 **Apr 2025** · Presented poster at MASC-SLL Symposium
+📄 <b>Mar 2026</b> · "Mapping the Flow of Painterly Gesture" accepted at <i>Patterns</i><br>
+🏆 <b>Feb 2026</b> · Penn State team selected as global Top-10 in <a href="https://www.psu.edu/news/research/story/ist-engineering-students-competing-global-amazon-nova-ai-challenge">Amazon Nova AI Challenge</a><br>
+📄 <b>Feb 2026</b> · Two papers submitted to Interspeech 2026 (under review)<br>
+📄 <b>Feb 2026</b> · "Brushstroke Analysis of Monet's Water Lilies" accepted at <i>IEEE TPAMI</i><br>
+🎓 <b>Dec 2025</b> · Passed PhD Comprehensive Exam<br>
+📄 <b>Nov 2025</b> · Attended Grace Hopper Celebration 2025 in Chicago<br>
+📄 <b>Oct 2025</b> · Paper submitted to ACL ARR 2026<br>
+🎤 <b>Oct 2025</b> · Presented MAD poster at SBP-BRiMS 2025 at CMU<br>
+📄 <b>Aug 2025</b> · MAD accepted at SBP-BRiMS 2025<br>
+🎤 <b>Apr 2025</b> · Presented poster at MASC-SLL Symposium<br>
 
 </div>
 
