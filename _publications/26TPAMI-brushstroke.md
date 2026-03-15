@@ -6,5 +6,4 @@ abbr: "TPAMI"     # this is the little badge text
 date: 2026-02-12
 selected: true
 pdf: "/files/papers/TPAMI-brushstroke.pdf"
-status: "Published"
 ---
