@@ -6,6 +6,5 @@ abbr: "Patterns"     # this is the little badge text
 date: 2026-03-13
 selected: true
 pdf: "/files/papers/patterns_short_brushstroke.pdf"
-status: "Published"
 ---
 
