@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Chaewan Chun"
+title: ""
 description: "Personal website of Chaewan Chun, Ph.D. candidate in Informatics at Penn State, researching multimodal misinformation detection and spoken dialogue fact-checking."
 author_profile: true
 redirect_from:
