@@ -7,7 +7,7 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "State College, PA"
+locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
 title                    : "Chaewan Chun"
 title_separator          : "-"
@@ -145,8 +145,8 @@ og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person
+  name                   : Chaewan Chun
   links: # An array of links to social media profiles
 
 
