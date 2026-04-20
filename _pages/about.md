@@ -25,6 +25,7 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 
 <div style="height: 320px; overflow-y: auto; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px; line-height: 2;">
 
+🎉 <b>Apr 2026</b> · "When Misinformation Speaks and Converses: Rethinking Fact-Checking in Audio Platforms" accepted at <i>ACL main</i>😆!!<br>
 📄 <b>Mar 2026</b> · "Mapping the Flow of Painterly Gesture" accepted at <i>Patterns</i><br>
 🏆 <b>Feb 2026</b> · Penn State team selected as global Top-10 in <a href="https://www.psu.edu/news/research/story/ist-engineering-students-competing-global-amazon-nova-ai-challenge">Amazon Nova AI Challenge</a><br>
 📄 <b>Feb 2026</b> · Two papers submitted to Interspeech 2026 (under review)<br>
