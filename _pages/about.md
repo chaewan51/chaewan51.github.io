@@ -25,17 +25,22 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 
 <div style="height: 320px; overflow-y: auto; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px; line-height: 2;">
 
-🎉 <b>Apr 2026</b> · "When Misinformation Speaks and Converses: Rethinking Fact-Checking in Audio Platforms" accepted at <i>ACL main</i>😆!!<br>
+📄 <b>May 2026</b> · Two papers submitted to <i>EMNLP 2026</i><br>
+🎤 <b>May 2026</b> · Selected for an oral presentation at <i>ACL 2026</i> in San Diego😆!!<br>
+🎉 <b>Apr 2026</b> · "When Misinformation Speaks and Converses: Rethinking Fact-Checking in Audio Platforms" accepted at <i>ACL 2026</i><br>
 📄 <b>Mar 2026</b> · "Mapping the Flow of Painterly Gesture" accepted at <i>Patterns</i><br>
 🏆 <b>Feb 2026</b> · Penn State team selected as global Top-10 in <a href="https://www.psu.edu/news/research/story/ist-engineering-students-competing-global-amazon-nova-ai-challenge">Amazon Nova AI Challenge</a><br>
-📄 <b>Feb 2026</b> · Two papers submitted to Interspeech 2026 (under review)<br>
+📄 <b>Feb 2026</b> · Two papers submitted to <i>Interspeech 2026</i> under review<br>
 📄 <b>Feb 2026</b> · "Brushstroke Analysis of Monet's Water Lilies" accepted at <i>IEEE TPAMI</i><br>
 🎓 <b>Dec 2025</b> · Passed PhD Comprehensive Exam<br>
 📄 <b>Nov 2025</b> · Attended Grace Hopper Celebration 2025 in Chicago<br>
-📄 <b>Oct 2025</b> · Paper submitted to ACL ARR 2026<br>
-🎤 <b>Oct 2025</b> · Presented MAD poster at SBP-BRiMS 2025 at CMU<br>
-📄 <b>Aug 2025</b> · MAD accepted at SBP-BRiMS 2025<br>
+📄 <b>Oct 2025</b> · Paper submitted to <i>ACL ARR 2026</i><br>
+🎤 <b>Oct 2025</b> · Presented MAD poster at <i>SBP-BRiMS 2025</i> at CMU<br>
+📄 <b>Aug 2025</b> · MAD accepted at <i>SBP-BRiMS 2025</i><br>
 🎤 <b>Apr 2025</b> · Presented poster at MASC-SLL Symposium<br>
+
+</div>
+
 
 </div>
 
