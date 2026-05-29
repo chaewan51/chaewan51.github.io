@@ -34,7 +34,6 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 📄 <b>Feb 2026</b> · "Brushstroke Analysis of Monet's Water Lilies" accepted at <i>IEEE TPAMI</i><br>
 🎓 <b>Dec 2025</b> · Passed PhD Comprehensive Exam<br>
 📄 <b>Nov 2025</b> · Attended Grace Hopper Celebration 2025 in Chicago<br>
-📄 <b>Oct 2025</b> · Paper submitted to <i>ACL ARR 2026</i><br>
 🎤 <b>Oct 2025</b> · Presented MAD poster at <i>SBP-BRiMS 2025</i> at CMU<br>
 📄 <b>Aug 2025</b> · MAD accepted at <i>SBP-BRiMS 2025</i><br>
 🎤 <b>Apr 2025</b> · Presented poster at MASC-SLL Symposium<br>
