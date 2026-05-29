@@ -42,9 +42,6 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 </div>
 
 
-</div>
-
-
 
 ## Publications
 
