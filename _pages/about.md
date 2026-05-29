@@ -25,7 +25,7 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 
 <div style="height: 320px; overflow-y: auto; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px; line-height: 2;">
 
-🛫 <b>May 2026</b> · Will join the <i>Air Force Research Laboratory (AFRL)</i> as a Ph.D. Research Intern<br>
+🛫 <b>June 2026</b> · Will join the <i>Air Force Research Laboratory (AFRL)</i> as a Ph.D. Research Intern<br>
 📄 <b>May 2026</b> · Two papers submitted to <i>EMNLP 2026</i><br>
 🎤 <b>May 2026</b> · Selected for an oral presentation at <i>ACL 2026</i> in San Diego😆!!<br>
 🎉 <b>Apr 2026</b> · "When Misinformation Speaks and Converses: Rethinking Fact-Checking in Audio Platforms" accepted at <i>ACL 2026</i><br>
