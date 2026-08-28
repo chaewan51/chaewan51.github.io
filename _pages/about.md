@@ -42,8 +42,6 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
   </ul>
 </details>
 
-## Selected publications
+## Publications
 
-{% include publication-list.html selected=true %}
-
-<p><a href="{{ '/publications/' | relative_url }}">View all publications →</a></p>
+{% include publication-list.html %}
