@@ -107,21 +107,23 @@
   }
 }
 
-.publication-card__authors,
-.publication-card__venue,
-.publication-card__links {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.35;
-}
+.publication-card__body {
+  .publication-card__authors,
+  .publication-card__venue,
+  .publication-card__links {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.35;
+  }
 
-.publication-card__venue {
-  color: var(--global-text-color);
-  font-weight: 500;
-}
+  .publication-card__venue {
+    color: var(--global-text-color);
+    font-weight: 500;
+  }
 
-.publication-card__links {
-  margin-top: 0.25rem;
+  .publication-card__links {
+    margin-top: 0.25rem;
+  }
 }
 
 @include breakpoint(max-width $small) {
