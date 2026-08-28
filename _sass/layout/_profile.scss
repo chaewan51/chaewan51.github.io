@@ -116,9 +116,13 @@
   }
 
   .publication-card__venue {
-    color: var(--global-text-color);
+    color: #555;
     font-style: italic;
     font-weight: 500;
+
+    html[data-theme="dark"] & {
+      color: #d0d0d0;
+    }
   }
 
   .publication-card__links {
