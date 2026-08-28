@@ -21,8 +21,8 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 ## Updates
 
 <ul class="updates-list" aria-label="Recent updates">
+  <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-08">August 2026</time> · Two papers accepted to <em>EMNLP 2026</em>—one in the main conference and one in <em>Findings</em></p></li>
   <li><span class="updates-list__icon" aria-hidden="true">🛫</span><p><time datetime="2026-06">June 2026</time> · Will join the <em>Air Force Research Laboratory (AFRL)</em> as a Ph.D. Research Intern</p></li>
-  <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-05">May 2026</time> · Two papers submitted to <em>EMNLP 2026</em></p></li>
   <li><span class="updates-list__icon" aria-hidden="true">🎤</span><p><time datetime="2026-05">May 2026</time> · Selected for an oral presentation at <em>ACL 2026</em> in San Diego</p></li>
   <li><span class="updates-list__icon" aria-hidden="true">🎉</span><p><time datetime="2026-04">April 2026</time> · “When Misinformation Speaks and Converses: Rethinking Fact-Checking in Audio Platforms” accepted at <em>ACL 2026</em></p></li>
   <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-03">March 2026</time> · “Mapping the Flow of Painterly Gesture” accepted at <em>Patterns</em></p></li>

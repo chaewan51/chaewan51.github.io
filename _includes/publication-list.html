@@ -32,7 +32,7 @@
         </h3>
         <p class="publication-card__authors">{{ authors_html | strip }}</p>
         <p class="publication-card__venue">
-          {{ publication.venue }}{% if publication.status %}, {{ publication.status }}{% endif %}{% if publication_year %}, {{ publication_year }}{% endif %}
+          {{ publication.venue }}{% if publication.status %}, {{ publication.status }}{% endif %}{% if publication_year and publication.venue_includes_year != true %}, {{ publication_year }}{% endif %}
         </p>
 
         {% if publication.code %}
