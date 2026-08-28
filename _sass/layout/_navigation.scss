@@ -189,7 +189,7 @@
     }
   }
 
-  button {
+  > .greedy-nav__toggle {
     position: absolute;
     height: 2.5rem;
     right: 0;
@@ -211,7 +211,7 @@
 
       &:first-child {
         font-weight: bold;
-        text-wrap: wrap;
+        white-space: nowrap;
 
         a {
           margin-left: 0;
@@ -226,11 +226,27 @@
     }
 
     #theme-toggle {
-      a {
+      .theme-toggle__button {
+        position: static;
         width: 25px;
+        height: auto;
         display: flex;
         justify-content: center;
+        margin: 0;
+        padding: 0.5rem 0;
+        color: var(--global-masthead-link-color);
+        background: transparent;
+        border: 0;
         cursor: pointer;
+
+        &:hover {
+          color: var(--global-masthead-link-color-hover);
+        }
+
+        &:focus-visible {
+          outline: 2px solid var(--global-link-color);
+          outline-offset: 3px;
+        }
       }
     }
 
@@ -268,7 +284,7 @@
     padding: 5px;
     border: 1px solid var(--global-border-color);
     border-radius: $border-radius;
-    background: #fff;
+    background: var(--global-bg-color);
     box-shadow: 0 0 10px rgba(#000, 0.25);
 
     a {
@@ -303,7 +319,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: #fff transparent;
+      border-color: var(--global-bg-color) transparent;
       display: block;
       z-index: 1;
     }

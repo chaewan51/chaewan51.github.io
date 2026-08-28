@@ -1,27 +1,22 @@
 {
-  "name": "academic-pages",
-  "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "name": "chaewan51-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build tools for Chaewan Chun's academic website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/chaewan51/chaewan51.github.io"
   },
   "keywords": [
     "jekyll",
     "theme",
     "minimal"
   ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
+  "contributors": ["Chaewan Chun"],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
-  },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://chaewan51.github.io",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 18"
   },
   "dependencies": {
     "fitvids": "^2.1.1",

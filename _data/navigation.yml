@@ -4,10 +4,11 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
-main: 
+# Keep the primary navigation focused on the pages visitors need most.
+main:
+  - title: "Publications"
+    url: /publications/
+  - title: "Awards"
+    url: /awards/
   - title: "CV"
     url: /files/resume_chun.pdf
-  

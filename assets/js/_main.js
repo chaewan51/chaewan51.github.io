@@ -2,23 +2,6 @@
    Various functions that we want to use within the template
    ========================================================================== */
 
-// Determine the expected state of the theme toggle, which can be "dark", "light", or
-// "system". Default is "system".
-let determineThemeSetting = () => {
-  let themeSetting = localStorage.getItem("theme");
-  return (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
-};
-
-// Determine the computed theme, which can be "dark" or "light". If the theme setting is
-// "system", the computed theme is determined based on the user's system preference.
-let determineComputedTheme = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting != "system") {
-    return themeSetting;
-  }
-  return (userPref && userPref("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
-};
-
 // detect OS/browser preference
 const browserPref = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
@@ -33,9 +16,11 @@ let setTheme = (theme) => {
   if (use_theme === "dark") {
     $("html").attr("data-theme", "dark");
     $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
+    $(".theme-toggle__button").attr("aria-label", "Switch to light theme").attr("aria-pressed", "true");
   } else if (use_theme === "light") {
     $("html").removeAttr("data-theme");
     $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
+    $(".theme-toggle__button").attr("aria-label", "Switch to dark theme").attr("aria-pressed", "false");
   }
 };
 
@@ -46,40 +31,6 @@ var toggleTheme = () => {
   localStorage.setItem("theme", new_theme);
   setTheme(new_theme);
 };
-
-/* ==========================================================================
-   Plotly integration script so that Markdown codeblocks will be rendered
-   ========================================================================== */
-
-// Read the Plotly data from the code block, hide it, and render the chart as new node. This allows for the 
-// JSON data to be retrieve when the theme is switched. The listener should only be added if the data is 
-// actually present on the page.
-import { plotlyDarkLayout, plotlyLightLayout } from './theme.js';
-let plotlyElements = document.querySelectorAll("pre>code.language-plotly");
-if (plotlyElements.length > 0) {
-  document.addEventListener("readystatechange", () => {
-    if (document.readyState === "complete") {
-      plotlyElements.forEach((elem) => {
-        // Parse the Plotly JSON data and hide it
-        var jsonData = JSON.parse(elem.textContent);
-        elem.parentElement.classList.add("hidden");
-
-        // Add the Plotly node
-        let chartElement = document.createElement("div");
-        elem.parentElement.after(chartElement);
-
-        // Set the theme for the plot and render it
-        const theme = (determineComputedTheme() === "dark") ? plotlyDarkLayout : plotlyLightLayout;
-        if (jsonData.layout) {
-          jsonData.layout.template = (jsonData.layout.template) ? { ...theme, ...jsonData.layout.template } : theme;
-        } else {
-          jsonData.layout = { template: theme };
-        }
-        Plotly.react(chartElement, jsonData.data, jsonData.layout);
-      });
-    }
-  });
-}
 
 /* ==========================================================================
    Actions that should occur when the page has been fully loaded
@@ -100,7 +51,7 @@ $(document).ready(function () {
         });
 
   // Enable the theme toggle
-  $('#theme-toggle').on('click', toggleTheme);
+  $('.theme-toggle__button').on('click', toggleTheme);
 
   // Enable the sticky footer
   var bumpIt = function () {
@@ -121,15 +72,23 @@ $(document).ready(function () {
   fitvids();
 
   // Follow menu drop down
-  $(".author__urls-wrapper button").on("click", function () {
-    $(".author__urls").fadeToggle("fast", function () { });
-    $(".author__urls-wrapper button").toggleClass("open");
+  $(".author__urls-toggle").on("click", function () {
+    const $button = $(this);
+    const $links = $("#author-contact-links");
+    const expanded = !$links.is(":visible");
+    $links.stop(true, true).fadeToggle("fast");
+    $button.toggleClass("open", expanded).attr("aria-expanded", expanded.toString());
   });
 
   // Restore the follow menu if toggled on a window resize
   jQuery(window).on('resize', function () {
-    if ($('.author__urls.social-icons').css('display') == 'none' && $(window).width() >= scssLarge) {
-      $(".author__urls").css('display', 'block')
+    const $links = $("#author-contact-links");
+    const $button = $(".author__urls-toggle");
+    if ($(window).width() >= scssLarge) {
+      $links.css('display', 'block');
+      $button.removeClass('open').attr('aria-expanded', 'false');
+    } else if (!$button.hasClass('open')) {
+      $links.css('display', 'none');
     }
   });
 

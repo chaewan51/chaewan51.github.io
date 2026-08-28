@@ -6,7 +6,7 @@
 */
 
 var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
+var $btn = $('#site-nav .greedy-nav__toggle');
 var $vlinks = $('#site-nav .visible-links');
 var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
 var $hlinks = $('#site-nav .hidden-links');
@@ -51,6 +51,8 @@ function updateNav() {
     if (breaks.length < 1) {
       $btn.addClass('hidden');
       $btn.removeClass('close');
+      $btn.attr('aria-expanded', 'false');
+      $btn.attr('aria-label', 'Open navigation menu');
       $hlinks.addClass('hidden');
     }
   }
@@ -74,13 +76,18 @@ function updateNav() {
 $(window).on('resize', function () {
   updateNav();
 });
-screen.orientation.addEventListener("change", function () {
-  updateNav();
-});
+if (screen.orientation) {
+  screen.orientation.addEventListener("change", function () {
+    updateNav();
+  });
+}
 
 $btn.on('click', function () {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
+  var expanded = !$hlinks.hasClass('hidden');
+  $(this).attr('aria-expanded', expanded.toString());
+  $(this).attr('aria-label', expanded ? 'Close navigation menu' : 'Open navigation menu');
 });
 
 updateNav();

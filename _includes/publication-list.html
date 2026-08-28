@@ -1,0 +1,48 @@
+{% assign publications = site.publications | sort: "date" | reverse %}
+{% if include.selected %}
+  {% assign publications = publications | where: "selected", true %}
+{% endif %}
+
+<div class="publication-list">
+  {% for publication in publications %}
+    {% capture authors_html %}
+      {{ publication.authors | replace: "Chaewan Chun", "<strong>Chaewan Chun</strong>" }}
+    {% endcapture %}
+    {% assign publication_year = publication.year %}
+    {% if publication_year == nil and publication.date %}
+      {% assign publication_year = publication.date | date: "%Y" %}
+    {% endif %}
+
+    <article class="publication-card">
+      <div class="publication-card__badge-wrap">
+        <abbr class="publication-card__badge" title="{{ publication.venue | escape }}">
+          {{ publication.abbr | default: "Publication" }}
+        </abbr>
+      </div>
+
+      <div class="publication-card__body">
+        <h3 class="publication-card__title">
+          {% if publication.pdf %}
+            <a href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener" aria-label="{{ publication.title | escape }} (PDF)">
+              {{ publication.title }}<span class="sr-only"> (PDF)</span>
+            </a>
+          {% else %}
+            {{ publication.title }}
+          {% endif %}
+        </h3>
+        <p class="publication-card__authors">{{ authors_html | strip }}</p>
+        <p class="publication-card__venue">
+          {{ publication.venue }}{% if publication.status %}, {{ publication.status }}{% endif %}{% if publication_year %}, {{ publication_year }}{% endif %}
+        </p>
+
+        {% if publication.code %}
+          <p class="publication-card__links">
+            <a class="btn btn--small" href="{{ publication.code }}" target="_blank" rel="noopener">Code</a>
+          </p>
+        {% endif %}
+      </div>
+    </article>
+  {% else %}
+    <p>No publications have been added yet.</p>
+  {% endfor %}
+</div>

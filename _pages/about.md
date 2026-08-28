@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-## About me
+# About me
 
 Hello! I’m **Chaewan Chun** (*Chae*).
 
@@ -18,129 +18,32 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 
 **Interests:** Machine Learning; Generative AI; Large Language Models; Computer Vision; Speech & Audio Processing; Multimodal Learning; Information Retrieval
 
-
-
-
 ## Updates
 
-<div style="height: 320px; overflow-y: auto; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px; line-height: 2;">
+<ul class="updates-list" aria-label="Recent updates">
+  <li><span class="updates-list__icon" aria-hidden="true">🛫</span><p><time datetime="2026-06">June 2026</time> · Will join the <em>Air Force Research Laboratory (AFRL)</em> as a Ph.D. Research Intern</p></li>
+  <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-05">May 2026</time> · Two papers submitted to <em>EMNLP 2026</em></p></li>
+  <li><span class="updates-list__icon" aria-hidden="true">🎤</span><p><time datetime="2026-05">May 2026</time> · Selected for an oral presentation at <em>ACL 2026</em> in San Diego</p></li>
+  <li><span class="updates-list__icon" aria-hidden="true">🎉</span><p><time datetime="2026-04">April 2026</time> · “When Misinformation Speaks and Converses: Rethinking Fact-Checking in Audio Platforms” accepted at <em>ACL 2026</em></p></li>
+  <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-03">March 2026</time> · “Mapping the Flow of Painterly Gesture” accepted at <em>Patterns</em></p></li>
+  <li><span class="updates-list__icon" aria-hidden="true">🏆</span><p><time datetime="2026-02">February 2026</time> · Penn State team selected as a global Top 10 finalist in the <a href="https://www.psu.edu/news/research/story/ist-engineering-students-competing-global-amazon-nova-ai-challenge">Amazon Nova AI Challenge</a></p></li>
+</ul>
 
-🛫 <b>June 2026</b> · Will join the <i>Air Force Research Laboratory (AFRL)</i> as a Ph.D. Research Intern<br>
-📄 <b>May 2026</b> · Two papers submitted to <i>EMNLP 2026</i><br>
-🎤 <b>May 2026</b> · Selected for an oral presentation at <i>ACL 2026</i> in San Diego😆!!<br>
-🎉 <b>Apr 2026</b> · "When Misinformation Speaks and Converses: Rethinking Fact-Checking in Audio Platforms" accepted at <i>ACL 2026</i><br>
-📄 <b>Mar 2026</b> · "Mapping the Flow of Painterly Gesture" accepted at <i>Patterns</i><br>
-🏆 <b>Feb 2026</b> · Penn State team selected as global Top-10 in <a href="https://www.psu.edu/news/research/story/ist-engineering-students-competing-global-amazon-nova-ai-challenge">Amazon Nova AI Challenge</a><br>
-📄 <b>Feb 2026</b> · Two papers submitted to <i>Interspeech 2026</i> under review<br>
-📄 <b>Feb 2026</b> · "Brushstroke Analysis of Monet's Water Lilies" accepted at <i>IEEE TPAMI</i><br>
-🎓 <b>Dec 2025</b> · Passed PhD Comprehensive Exam<br>
-📄 <b>Nov 2025</b> · Attended Grace Hopper Celebration 2025 in Chicago<br>
-🎤 <b>Oct 2025</b> · Presented MAD poster at <i>SBP-BRiMS 2025</i> at CMU<br>
-📄 <b>Aug 2025</b> · MAD accepted at <i>SBP-BRiMS 2025</i><br>
-🎤 <b>Apr 2025</b> · Presented poster at MASC-SLL Symposium<br>
+<details class="updates-archive">
+  <summary>Earlier updates</summary>
+  <ul class="updates-list">
+    <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-02">February 2026</time> · Two papers submitted to <em>Interspeech 2026</em></p></li>
+    <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-02">February 2026</time> · “Brushstroke Analysis of Monet’s Water Lilies” accepted at <em>IEEE TPAMI</em></p></li>
+    <li><span class="updates-list__icon" aria-hidden="true">🎓</span><p><time datetime="2025-12">December 2025</time> · Passed the Ph.D. Comprehensive Exam</p></li>
+    <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2025-11">November 2025</time> · Attended the Grace Hopper Celebration 2025 in Chicago</p></li>
+    <li><span class="updates-list__icon" aria-hidden="true">🎤</span><p><time datetime="2025-10">October 2025</time> · Presented the MAD poster at <em>SBP-BRiMS 2025</em> at Carnegie Mellon University</p></li>
+    <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2025-08">August 2025</time> · MAD accepted at <em>SBP-BRiMS 2025</em></p></li>
+    <li><span class="updates-list__icon" aria-hidden="true">🎤</span><p><time datetime="2025-04">April 2025</time> · Presented a poster at the MASC-SLL Symposium</p></li>
+  </ul>
+</details>
 
-</div>
+## Selected publications
 
+{% include publication-list.html selected=true %}
 
-
-## Publications
-
-{% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-
-<div class="pubs2">
-  {% for p in pubs %}
-  {% capture authors_html %}
-    {{ p.authors | replace: "Chaewan Chun", "<strong>Chaewan Chun</strong>" }}
-  {% endcapture %}
-
-  <article class="pub2">
-    <div class="pub2-left">
-      <abbr class="abbr-badge">{{ p.abbr | default: "VENUE" }}</abbr>
-    </div>
-
-    <div class="pub2-right">
-      <h3 class="pub-title">
-        {% if p.pdf %}
-          <a href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener">{{ p.title }}</a>
-        {% else %}
-          {{ p.title }}
-        {% endif %}
-      </h3>
-
-      <div class="pub-authors">{{ authors_html }}</div>
-
-      {% assign y = p.year %}
-      {% if y == nil and p.date %}{% assign y = p.date | date: "%Y" %}{% endif %}
-      <div class="pub-venue">
-        {{ p.venue }}{% if p.status %}, {{ p.status }}{% endif %}{% if y %}, {{ y }}{% endif %}
-      </div>
-
-
-      <div class="pub-links">
-        {% if p.code %}<a class="btn" href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
-      </div>
-    </div>
-  </article>
-  {% endfor %}
-</div>
-
-
-<style>
-/* ===== Compact Option B (same scale as Option A) ===== */
-:root{
-  --badge-col: 84px;      /* width of the left badge column (tweak if your abbr is long) */
-  --badge-fs: 12px;       /* badge font size (Option A used ~12px) */
-  --badge-pad-y: 4px;     /* vertical padding */
-  --badge-pad-x: 8px;     /* horizontal padding */
-  --badge-radius: 6px;    /* rounded corners (≈ .375rem) */
-}
-
-.pubs2{display:flex;flex-direction:column;gap:12px;margin-top:8px}
-.pub2{
-  display:grid;
-  grid-template-columns: var(--badge-col) 1fr;
-  gap:10px;
-  align-items:start;
-  border-top:1px solid rgba(0,0,0,.08);
-  padding-top:10px;
-}
-.pub2:first-child{border-top:none}
-
-.pub2-left{display:flex;justify-content:center;align-items:flex-start;margin-top:2px}
-
-/* Badge scaled like Option A */
-.abbr-badge{
-  display:inline-block;
-  width:100%;               /* fills the left column for clean vertical alignment */
-  text-align:center;
-  font-size:var(--badge-fs);
-  line-height:1.05;
-  font-weight:700;
-  letter-spacing:.2px;
-  padding:var(--badge-pad-y) var(--badge-pad-x);
-  border-radius:var(--badge-radius);
-  background:#3f51b5;       /* single color for all (your preference) */
-  color:#fff;
-  white-space:nowrap;        /* prevent awkward wrapping; increase --badge-col if needed */
-  user-select:none;
-}
-.abbr-badge a{color:#fff;text-decoration:none}
-
-/* Content scale (keep titles from dwarfing the badge) */
-.pub-title{margin:0;line-height:1.35;font-size:1rem}
-.pub-title a{text-decoration:none;color:#2a66ff}
-.pub-title a:hover{text-decoration:underline}
-.pub-authors{opacity:.9;margin-top:2px;font-size:.95rem}
-.pub-venue{opacity:.75;margin-top:2px;font-size:.95rem}
-
-.pub-links .btn{
-  display:inline-block;margin-top:6px;margin-right:8px;
-  padding:4px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.15);
-  font-size:.85rem;text-decoration:none
-}
-
-/* Mobile tweaks */
-@media (max-width:640px){
-  :root{ --badge-col: 72px; --badge-fs: 11px; --badge-pad-y: 3px; --badge-pad-x: 6px; }
-}
-</style>
+<p><a href="{{ '/publications/' | relative_url }}">View all publications →</a></p>
