@@ -72,6 +72,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 0;
   gap: 0.9rem;
   padding-left: 1rem;
   border-left: 2px solid var(--global-border-color);
@@ -92,6 +93,7 @@
 .publication-card {
   display: grid;
   grid-template-columns: 5.25rem minmax(0, 1fr);
+  min-width: 0;
   gap: 0.75rem;
   align-items: start;
   padding-top: 0.75rem;
@@ -144,12 +146,15 @@
 }
 
 .publication-card__body {
+  min-width: 0;
+
   .publication-card__authors,
   .publication-card__venue,
   .publication-card__links {
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.35;
+    overflow-wrap: break-word;
   }
 
   .publication-card__venue {
