@@ -48,8 +48,45 @@
 .publication-list {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 1.6rem;
   margin-top: 0.5rem;
+}
+
+.publication-year-group {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  gap: 0.9rem;
+}
+
+.publication-year-marker {
+  margin: 0;
+  padding-top: 0.05rem;
+  color: #3f51b5;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: right;
+}
+
+.publication-year-items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--global-border-color);
+
+  &::before {
+    position: absolute;
+    top: 0.25rem;
+    left: -0.4rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #3f51b5;
+    border: 2px solid var(--global-bg-color);
+    border-radius: 50%;
+    content: "";
+  }
 }
 
 .publication-card {
@@ -131,6 +168,39 @@
 }
 
 @include breakpoint(max-width $small) {
+  .publication-list {
+    gap: 1.35rem;
+  }
+
+  .publication-year-group {
+    display: block;
+  }
+
+  .publication-year-marker {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    margin-bottom: 0.55rem;
+    padding: 0;
+    text-align: left;
+
+    &::after {
+      height: 1px;
+      background: var(--global-border-color);
+      content: "";
+      flex: 1;
+    }
+  }
+
+  .publication-year-items {
+    padding-left: 0;
+    border-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
   .publication-card {
     grid-template-columns: 4.5rem minmax(0, 1fr);
     gap: 0.6rem;
