@@ -21,6 +21,7 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 ## Updates
 
 <ul class="updates-list" aria-label="Recent updates">
+  <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-09">September 2026</time> · Two papers accepted to <em>SALMA</em> at <em>EMNLP 2026</em></p></li>
   <li><span class="updates-list__icon" aria-hidden="true">🌟</span><p><time datetime="2026-08">August 2026</time> · Selected for the <a href="https://aisummit26.acm.org/future-leaders/">Future Leaders of AI</a> doctoral consortium at the <em>ACM AI Leadership Summit</em>; will attend in Atlanta, Georgia</p></li>
   <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-08">August 2026</time> · Two papers accepted to <em>EMNLP 2026</em>: one in main, one in <em>Findings</em></p></li>
   <li><span class="updates-list__icon" aria-hidden="true">🛫</span><p><time datetime="2026-08">August 2026</time> · Completed a Ph.D. Research Scientist Internship at the <em>Air Force Research Laboratory (AFRL)</em></p></li>
