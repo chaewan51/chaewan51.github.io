@@ -6,4 +6,5 @@ venue_includes_year: true
 abbr: "EMNLP Findings"
 date: 2026-08-01
 selected: true
+pdf: "/files/papers/26EMNLP-trilogue.pdf"
 ---

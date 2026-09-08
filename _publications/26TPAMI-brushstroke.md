@@ -5,5 +5,5 @@ venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 48,
 abbr: "TPAMI"     # this is the little badge text
 date: 2026-02-12
 selected: true
-pdf: "/files/papers/TPAMI-brushstroke.pdf"
+pdf: "/files/papers/26TPAMI-brushstroke.pdf"
 ---

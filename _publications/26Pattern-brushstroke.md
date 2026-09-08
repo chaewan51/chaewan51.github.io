@@ -5,6 +5,6 @@ venue: "Patterns, vol. 7, no. 3, article 101516"
 abbr: "Patterns"     # this is the little badge text
 date: 2026-03-13
 selected: true
-pdf: "/files/papers/patterns_short_brushstroke.pdf"
+pdf: "/files/papers/26Pattern-brushstroke.pdf"
 ---
 

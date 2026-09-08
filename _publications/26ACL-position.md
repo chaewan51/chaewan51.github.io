@@ -6,5 +6,5 @@ abbr: "ACL"     # this is the little badge text
 status: "Oral Presentation"
 date: 2026-04-20
 selected: true
-pdf: "/files/papers/ACL2026_position.pdf"
+pdf: "/files/papers/26ACL-position.pdf"
 ---
