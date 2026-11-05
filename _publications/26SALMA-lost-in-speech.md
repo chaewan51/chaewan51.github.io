@@ -5,4 +5,5 @@ venue: "The 2nd Speech and Audio Language Models Workshop (SALMA), EMNLP"
 abbr: "SALMA"
 date: 2026-09-08 00:00:01 -0400
 selected: true
+pdf: "/files/papers/26SALMA-lost-in-speech.pdf"
 ---
