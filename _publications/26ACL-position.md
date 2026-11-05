@@ -3,7 +3,7 @@ title: "When Misinformation Speaks and Converses: Rethinking Fact-Checking in Au
 authors: "Chaewan Chun, Delvin Ce Zhang, and Dongwon Lee"
 venue: "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL)"
 abbr: "ACL"     # this is the little badge text
-status: "Oral Presentation"
+status: "Oral Presentation · Selected for Best Paper Award Consideration"
 date: 2026-04-20
 selected: true
 pdf: "/files/papers/26ACL-position.pdf"
