@@ -74,7 +74,7 @@ stays newest first. Flags appear once per year, using the earliest visit remaini
 under the active filter; year headings have no flag row.
 Optional `summary_region` gives a region its own flag and accessible flag label
 (such as Hong Kong), without changing the record's country or location label.
-Map popups show the category and visit year. Months, days, stored notes, and paper
+Map popups show the visit year without a category label. Months, days, stored notes, and paper
 paths are not displayed.
 Country flags are local SVGs from flag-icons 7.2.3 (MIT); the license is included in
 `assets/images/travel-flags/`. Add the matching code in `countryCodes` in `assets/js/travel.js`
