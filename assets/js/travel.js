@@ -48,7 +48,11 @@
   }
   function popup(trip) {
     var content = el('div', 'travel-popup');
-    content.append(el('p', 'travel-popup-label', typeLabel(trip)));
+    var metadata = el('p', 'travel-popup-label', typeLabel(trip) + ' · ');
+    var year = el('time', '', String(trip.year));
+    year.setAttribute('datetime', String(trip.year));
+    metadata.append(year);
+    content.append(metadata);
     content.append(locationText('h3', locationLabel(trip)), locationText('small', countryLabel(trip)));
     if (trip.title) content.append(el('p', '', trip.title));
     return content;
