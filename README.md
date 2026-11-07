@@ -80,7 +80,8 @@ Country flags are local SVGs from flag-icons 7.2.3 (MIT); the license is include
 `assets/images/travel-flags/`. Add the matching code in `countryCodes` in `assets/js/travel.js`
 and a flag asset when introducing another country; names still display without a flag.
 Use the same city name and coordinates for repeat visits so their pins group
-together. Add completed visits only; conference acceptance alone does not establish
+together. Expanded pins are numbered oldest first (1 is the earliest visit), while
+the Travel Log remains newest first. Add completed visits only; conference acceptance alone does not establish
 attendance. The map uses Leaflet and OpenStreetMap tiles; the journal remains usable
 if the map cannot load.
 

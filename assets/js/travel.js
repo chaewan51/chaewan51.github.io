@@ -73,7 +73,9 @@
     var center = map.latLngToLayerPoint(origin);
     var radius = Math.max(52, group.length * 10);
     groupMarker.setOpacity(0);
-    group.forEach(function (trip, index) {
+    group.slice().sort(function (a, b) {
+      return a.year - b.year || (a.month || 0) - (b.month || 0) || (a.day || 0) - (b.day || 0) || (a.sequence || 0) - (b.sequence || 0);
+    }).forEach(function (trip, index) {
       var angle = index * Math.PI * 2 / group.length - Math.PI / 2;
       var position = map.layerPointToLatLng(center.add(L.point(Math.cos(angle) * radius, Math.sin(angle) * radius)));
       L.polyline([origin, position], {color: '#89939e', weight: 1, dashArray: '3 4', interactive: false}).addTo(expanded);
