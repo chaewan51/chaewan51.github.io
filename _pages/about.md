@@ -21,6 +21,7 @@ Before my Ph.D., I completed dual B.S. degrees in **Computer Science** (Magna Cu
 ## Updates
 
 <ul class="updates-list" aria-label="Recent updates">
+  <li><span class="updates-list__icon" aria-hidden="true">🛫</span><p><time datetime="2026-11">November 2026</time> · I’ll be joining a <em>Max Planck Institute</em> for a research internship in summer 2027!</p></li>
   <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-09">September 2026</time> · Two papers accepted to <em>SALMA</em> at <em>EMNLP 2026</em></p></li>
   <li><span class="updates-list__icon" aria-hidden="true">🌟</span><p><time datetime="2026-08">August 2026</time> · Selected for the <a href="https://aisummit26.acm.org/future-leaders/">Future Leaders of AI</a> doctoral consortium at the <em>ACM AI Leadership Summit</em>; will attend in Atlanta, Georgia</p></li>
   <li><span class="updates-list__icon" aria-hidden="true">📄</span><p><time datetime="2026-08">August 2026</time> · Two papers accepted to <em>EMNLP 2026</em> in Budapest, Hungary: one in the main conference and one in <em>Findings</em>.</p></li>
